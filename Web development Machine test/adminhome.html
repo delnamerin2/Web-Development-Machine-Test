@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin view</title>
+    <script src="adminhome.js"></script>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="adminhome.css">
+    <script>
+        window.history.forward();
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <div class="admincontainer">
+        <div class="header">
+            <h1>TRAVEL REQUESTOR</h1>
+            <input type="submit" value="logout" class="btn btn-primary" onclick="logout()"><br><br>
+        </div>
+        <!-- NAVIGATION BAR -->
+        <div class="topNav">
+            <a href="log.html" style="color:rgb(3, 3, 3)">Home</a>
+            <a href="#" style="color:rgb(22, 19, 19)">All</a>
+            <a href="#" style="color:rgb(5, 5, 5)">Approved</a>
+            <a href="#" style="color:rgb(20, 18, 18)">Rejected</a>
+            <a href="#" style="color:rgb(21, 19, 19)">onHold</a>
+            
+        </div><br>
+        <!-- END OF NAVIGATION BAR -->
+
+        <table rules="all" style=" border: 2px solid black;" class="form-class">
+            <tr>
+                <th>Employee Name</th>
+                <th>Destination</th>
+                <th>Priority</th>
+                <th>View Details</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>Donald</td>
+                <td>Las Vegas</td>
+                <td>Critical</td>
+                <td><a href="#">View More</a></td>
+                <td>Approve</a></td>
+
+            </tr>
+            <tr>
+                <td>Aswathy</td>
+                <td>Delhi</td>
+                <td>Normal</td>
+                <td><a href="#">View More</a></td>
+                <td>Approve</a></td>
+            </tr>
+            <tr>
+                <td>franco</td>
+                <td>kochi</td>
+                <td>Normal</td>
+                <td><a href="#">View More</a></td>
+                <td>Approve</a></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

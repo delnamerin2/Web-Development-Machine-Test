@@ -1,0 +1,11 @@
+.container{
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+   
+    
+}
+.body{
+    background-color: rgb(0, 0, 0);
+}

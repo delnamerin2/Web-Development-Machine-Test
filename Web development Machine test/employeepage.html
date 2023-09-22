@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/bootstrap-4.6.2-dist/bootstrap-4.6.2-dist/css/bootstrap.min.css">
+    <script src="employeepage.js"></script>
+    <link rel="stylesheet" href="employeepage.css">
+    <script>
+        window.history.forward();
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+<body>
+    <h1>TRAVEL REQUESTOR</h1>
+    <div class="container">
+        <br>
+        <div class="header">
+          
+            <button id="logout" onclick="logout()" class="btn btn-primary" >Logout</button><br><br>
+        </div>
+        <!-- NAVIGATION BAR -->
+    <div class="a">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      View
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul style="list-style-type: none;padding-left: 10px;">
+                                    <li><a href="viewuser.html">View All</a></li>
+                                    <li><a href="#">Critical</a></li>
+                                    <li><a href="#">Normal</a></li>
+                                    <li><a href="#">Rejected</a></li>
+                                </ul>
+                            </div>
+                        
+                
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="viewuser.html">View All <span class="sr-only">(current)</span></a>
+                  </li>
+                </ul>
+                
+              </div>
+     </nav>
+     </div>
+        <!-- END OF NAVIGATION BAR -->
+        <div class="forms">
+            <form id="requestForm">
+                <header><h1>Travel Request Form</h1></header>
+                <div id = "form-class">
+                    <label>Emp Id </label>
+                    <input type="text" id="empid" placeholder="Employee ID">
+                    <span id="idError" style="color: red;"></span>
+                    <label>Emp Name </label>
+                    <input type="text" id="empname" placeholder="Employee Name">
+                    <span id="nameError" style="color: red;"></span>
+                </div><br>
+                <div id="form-class">
+                    <label>Project</label>
+                    <input type="text" id="project" placeholder="Project">
+                    <span id="projectError" style="color: red;"></span>
+                    <label>Cause for travel</label>
+                    <input type="text" id="cause" placeholder="Cause">
+                    <span id="causeError" style="color: red;"></span>
+                </div><br>
+                <div id="form-class">
+                    <label>Source</label>
+                    <input type="text" id="source" placeholder="Source">
+                    <span id="sourceError" style="color: red;"></span>
+                    <label>Destination</label>
+                    <input type="text" id="destination" placeholder="Destination">
+                    <span id="destinationError" style="color: red;"></span>
+                </div><br>
+                <div id="form-class" class="">
+                    <label>From Date</label>
+                    <input type="date" id="fromDate">
+                    <span id="fromDateError" style="color: red;"></span>
+                    <label>No of days</label>
+                    <input type="number" id="noOfDays" placeholder="Number of days" onchange="getToDate()">
+                    <span id="noOfDaysError" style="color: red;"></span>
+                    <label>To Date</label>
+                    <input type="date" id="toDate" readonly>
+                </div><br>
+                <div id="form-class" class="form-control">
+                    <label>Mode of travel</label>
+                    <input type="text" id="modeOfTravel" placeholder="Mode of travel">
+                    <span id="modeError" style="color: red;"></span>
+                </div><br>
+                <div id="submit">
+                    <input type="submit" value="Submit"  class="btn btn-primary">
+                </div>
+            </form>
+        </div>  
+    </div>
+</body>
+</html>
